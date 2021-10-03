@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page </title>
+        <link rel="stylesheet" href="hoc.css">
+
+    </head>
+    <body>
+       <h1 style="text-align: center ; color:mediumblue;">Smart Home Website</h1>
+        <p style="color: cornflowerblue; font-size:xx-large;">This Website wil help you to control your Home</p>
+        
+
+        <form action="/action.page.php">
+            <div>
+            <label for="rooms" style="font-size: 50px; color: steelblue;">Choose a Room: </label> <br> <br><br>
+            <select name="rooms" id ="rooms" style="font-size: 28px;" >
+                <option value="Bedroom">Bedroom</option>
+                <option value="Livingroom">LivingRoom</option>
+                <option value="Toilet">Toilet</option>
+                <option value="Kitchen">Kitchen</option>
+            </select>
+            <br><br> <br>  
+            </div>      
+        </form>
+        <br>
+        <div>
+         <button type="button" onclick="room()" style="background-color:honeydew; font-size: 27px;border-style: dotted;">Display</button>
+       </div> 
+        <p id="demo"></p>
+        <script src="sm.js"></script>
+    </body>
+</html>
